@@ -152,7 +152,7 @@ public class WorldCup {
         Scanner myNumber = new Scanner(System.in);
         int number = myNumber.nextInt();
 
-        if(number >= 1 && number <= 6) {
+        if (number >= 1 && number <= 6) {
 
             int last16 = (int) (Math.random() * (max - min) + min);
             int quaterfinal = (int) (Math.random() * (max - min + 1) + min);
@@ -172,53 +172,48 @@ public class WorldCup {
                 number = myNumber.nextInt();
 
                 if (number >= 1 && number <= 6) {
-                    System.out.println("Invalid Value");
-                }
-
-                if (number >= quaterfinal) {
-                    System.out.println("Congrats you advanced to the semifinals");
-
-                    System.out.println("Pick a number between 1 and 6");
-                    number = myNumber.nextInt();
-
-                    if (number >= 1 && number <= 6) {
-                        System.out.println("Invalid Value");
-                    }
-
-                    if (number >= semifinal) {
-                        System.out.println("Congrats you advance to the finals");
+                    if (number >= quaterfinal) {
+                        System.out.println("Congrats you advanced to the semifinals");
 
                         System.out.println("Pick a number between 1 and 6");
                         number = myNumber.nextInt();
 
                         if (number >= 1 && number <= 6) {
-                            System.out.println("Invalid Value");
-                        }
+                            if (number >= semifinal) {
+                                System.out.println("Congrats you advance to the finals");
 
-                        if (number > finals) {
-                            System.out.println("You've won the World Cup 2022");
+                                System.out.println("Pick a number between 1 and 6");
+                                number = myNumber.nextInt();
+
+                                if (number >= 1 && number <= 6) {
+                                    if (number > finals) {
+                                        System.out.println("You've won the World Cup 2022");
+                                    } else {
+                                        System.out.println("You've finish 2nd");
+                                    }
+                                } else {
+                                    System.out.println("Invalid number");
+                                }
+                            } else {
+                                System.out.println("You are out of the tournament");
+                            }
                         } else {
-                            System.out.println("You've finish 2nd");
+                            System.out.println("Invalid number");
                         }
-
                     } else {
-                        System.out.println("You are out");
+                        System.out.println("You are out of the tournament");
                     }
 
                 } else {
-                    System.out.println("You are out of the tournament");
+                    System.out.println("Invalid number");
                 }
-
             } else {
                 System.out.println("You are out of the tournament");
             }
+            //the finale
         }
         else {
             System.out.println("Invalid number");
         }
-        //the finale
-
-        //print out the message where you end up
-    }
-
+    }// print out the message where you end up
 }
