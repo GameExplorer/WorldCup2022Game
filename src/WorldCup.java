@@ -67,7 +67,6 @@ public class WorldCup {
             } else {
                 System.out.println("You lost!");
                 opponentPoints2 += 3;
-
             }
 
             if (number > opponentNum3) {
@@ -117,12 +116,10 @@ public class WorldCup {
 
             }
 
-
             System.out.println(mypoints);
             System.out.println(opponentPoints1);
             System.out.println(opponentPoints2);
             System.out.println(opponentPoints3);
-
 
             //if number is 6 or greater advance to playoffs else write his placement in the group
             if (mypoints > opponentPoints1 && mypoints > opponentPoints2 && mypoints > opponentPoints3) {
