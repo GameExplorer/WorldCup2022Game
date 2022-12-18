@@ -142,7 +142,6 @@ public class WorldCup {
             System.out.println("Invalid team name");
         }
     }
-
     public static void playOffs() {
         //one match the one with higher number wins the game and advances
         int max = 6;
@@ -158,12 +157,11 @@ public class WorldCup {
             int quaterfinal = (int) (Math.random() * (max - min + 1) + min);
             int semifinal = (int) (Math.random() * (max - min + 1) + min);
             int finals = (int) (Math.random() * (max - min + 1) + min);
-            
+
         /*System.out.println(last16);
         System.out.println(quaterfinal);
         System.out.println(semifinal);
         System.out.println(finals);*/
-
             if (number >= last16) {
                 System.out.println("Congrats you advance to the quaterfinals");
 
@@ -180,7 +178,6 @@ public class WorldCup {
                         if (number >= 1 && number <= 6) {
                             if (number >= semifinal) {
                                 System.out.println("Congrats you advance to the finals");
-
                                 System.out.println("Pick a number between 1 and 6");
                                 number = myNumber.nextInt();
 
@@ -202,14 +199,12 @@ public class WorldCup {
                     } else {
                         System.out.println("You are out of the tournament");
                     }
-
                 } else {
                     System.out.println("Invalid number");
                 }
             } else {
                 System.out.println("You are out of the tournament");
             }
-            //the finale
         }
         else {
             System.out.println("Invalid number");
