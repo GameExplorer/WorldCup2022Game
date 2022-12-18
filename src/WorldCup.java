@@ -32,7 +32,6 @@ public class WorldCup {
 
             if (number >= 1 && number <= 6) {
 
-
                 int random_num1 = (int) (Math.random() * (max - min + 1) + min);
                 int random_num2 = (int) (Math.random() * (max - min + 1) + min);
                 int random_num3 = (int) (Math.random() * (max - min + 1) + min);
@@ -87,7 +86,6 @@ public class WorldCup {
                 } else {
                     System.out.println("You lost!");
                     opponentPoints3 += 3;
-
                 }
                 if (opponentNum1 > opponentNum3) {
                     opponentPoints1 += 3;
@@ -97,7 +95,6 @@ public class WorldCup {
 
                 } else {
                     opponentPoints3 += 3;
-
                 }
 
                 if (opponentNum1 > opponentNum2) {
@@ -108,7 +105,6 @@ public class WorldCup {
 
                 } else {
                     opponentPoints2 += 3;
-
                 }
 
                 if (opponentNum2 > opponentNum3) {
@@ -119,7 +115,6 @@ public class WorldCup {
 
                 } else {
                     opponentPoints3 += 3;
-
                 }
 
                 System.out.println(mypoints);
@@ -153,7 +148,6 @@ public class WorldCup {
         int max = 6;
         int min = 1;
 
-
         System.out.println("Pick a number between 1 and 6");
         Scanner myNumber = new Scanner(System.in);
         int number = myNumber.nextInt();
@@ -164,8 +158,7 @@ public class WorldCup {
             int quaterfinal = (int) (Math.random() * (max - min + 1) + min);
             int semifinal = (int) (Math.random() * (max - min + 1) + min);
             int finals = (int) (Math.random() * (max - min + 1) + min);
-
-
+            
         /*System.out.println(last16);
         System.out.println(quaterfinal);
         System.out.println(semifinal);
